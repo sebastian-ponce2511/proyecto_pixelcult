@@ -1,0 +1,187 @@
+:root {
+  --fuentes: 'Montserrat', sans-serif;
+
+  /* Colores */
+  --azul: #3d65e8; 
+  --rojo: #ff3d3d;
+  --gris: #a0a0a0;
+  --grisBarra: #f6f6f6;
+  --verde: #13c701;
+  --blanco: #fff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+    body {
+      font-family: var(--fuenteParrafos);
+      font-size: 1.6rem;
+      line-height: 2;
+  }
+
+/* Globales */
+
+.contenedor {
+  max-width: 120rem;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: var(--fuentes);
+  font-weight: 700;
+  color: var(--azul)
+}
+
+/* Header */
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: white;
+  margin-bottom: 2rem;
+}
+
+.navegacion {
+  margin-left: 15rem;
+}
+
+.navegacion a {
+  font-family: var(--fuentes);
+  font-weight: 600;
+  color: var(--gris);
+  margin: 2.5rem;
+}
+
+/* banner */
+
+.banner {
+  background-image:url(../img/hero.png);
+  background-repeat: no-repeat;
+  height: 50rem;
+}
+
+
+.texto_banner {
+  display: flex;
+  justify-content: flex-end;
+  font-family: var(--fuentes);
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--blanco);
+  margin: 0;
+  padding-top: 6rem;
+  margin-right: 25rem;  
+}
+
+/* Items */
+
+.barra_items {
+  background-color: var(--grisBarra);
+}
+
+.caja_iconos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icono {
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;;
+}
+
+.icono p {
+  font-family: var(--fuentes);
+  font-weight: 600;
+  color: var(--gris);
+  margin-left: 2rem;
+}
+
+/* Destacados */
+
+.productos {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.descripcion {
+  font-family: var(--fuentes);
+  color: var(--gris);
+  font-weight: 600;
+}
+
+.monto {
+  font-family: var(--fuentes);
+  font-weight: 400;
+  color: var(--verde);
+}
+
+/* Categorías */
+
+.categorias {
+  margin-bottom: 8rem;
+}
+
+.caja_categorias {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.caja_categorias h2 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.remeras {
+  background-image: url(../img/remera_doom.png);
+  height: 20rem; 
+}
+
+.gorras {
+  background-image: url(../img/gorra_dk.png);
+  height: 20rem;
+}
+
+.cuadros {
+  background-image: url(../img/cuadros.png);
+  height: 20rem;
+}
+
+.tazas {
+  background-image: url(../img/tazas.png);
+  height: 20rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--rojo);
+}
+
+
+
+
+
